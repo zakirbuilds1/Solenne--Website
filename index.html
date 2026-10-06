@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en" class="is-loading intro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Solenne Residences — Your life, elevated</title>
+  <meta name="description" content="Solenne Residences: 48 storeys of light, stone and quiet above the Central District. Scroll to step inside — from the arrival court to the sky pool." />
+  <meta name="theme-color" content="#0a0e17" />
+  <meta property="og:title" content="Solenne Residences — Your life, elevated" />
+  <meta property="og:description" content="48 storeys of light, stone and quiet above the Central District." />
+  <meta property="og:image" content="images/og.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230a0e17'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' fill='%23c8a26b' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="images/poster.webp" imagesrcset="images/poster-960.webp 960w, images/poster.webp 1920w" imagesizes="100vw" fetchpriority="high" />
+  <link rel="stylesheet" href="css/style.css" />
+  <noscript><style>.preloader{display:none}html.intro .header,html.intro .chapter>*,html.intro .ln__i{opacity:1!important;transform:none!important}.rv{opacity:1;translate:none}</style></noscript>
+</head>
+<body>
+
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__door preloader__door--l"></div>
+    <div class="preloader__door preloader__door--r"></div>
+    <div class="preloader__inner">
+      <div class="preloader__logo"><span style="--i:0">S</span><span style="--i:1">O</span><span style="--i:2">L</span><span style="--i:3">E</span><span style="--i:4">N</span><span style="--i:5">N</span><span style="--i:6">E</span></div>
+      <div class="preloader__sub">Residences</div>
+      <div class="preloader__bar"><i></i></div>
+      <div class="preloader__pct">0%</div>
+    </div>
+  </div>
+
+  <header class="header" id="top">
+    <a class="brand" href="#top" data-jump="street" aria-label="Solenne Residences — back to top">
+      <span class="brand__name">SOLENNE</span>
+      <span class="brand__sub">RESIDENCES</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#residences">Residences</a>
+      <a href="#amenities">Amenities</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#location">Location</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+    <div class="header__right">
+      <div class="header__meta">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Central District</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Sales gallery open daily</span>
+      </div>
+      <a class="btn btn--gold btn--sm" href="#book">Book a viewing</a>
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false"><i></i></button>
+    </div>
+  </header>
+
+  <div class="drawer" aria-hidden="true">
+    <a href="#residences">Residences</a>
+    <a href="#amenities">Amenities</a>
+    <a href="#architecture">Architecture</a>
+    <a href="#location">Location</a>
+    <a href="#gallery">Gallery</a>
+    <a class="btn btn--gold" href="#book">Book a viewing</a>
+  </div>
+
+  <main>
+    <!-- ================= THE FILM (scroll-scrubbed) ================= -->
+    <section class="film" id="film" aria-label="A walk through Solenne Residences">
+      <div class="film__sticky">
+        <img class="film__poster" src="images/poster.webp" srcset="images/poster-960.webp 960w, images/poster.webp 1920w" sizes="100vw" alt="Solenne Residences tower at blue hour" fetchpriority="high" />
+        <img class="film__still" data-src="images/ch-street.webp" alt="" />
+        <img class="film__still" data-src="images/ch-arrival.webp" alt="" />
+        <img class="film__still" data-src="images/ch-ascent.webp" alt="" />
+        <img class="film__still" data-src="images/ch-penthouse.webp" alt="" />
+        <img class="film__still" data-src="images/ch-terrace.webp" alt="" />
+        <img class="film__still" data-src="images/ch-skyline.webp" alt="" />
+        <video class="film__video" muted playsinline preload="auto" aria-hidden="true"></video>
+        <div class="film__shade"></div>
+        <div class="film__grain"></div>
+
+        <!-- private lift: frosted glass doors close over the lobby, the level climbs, they open on the penthouse -->
+        <div class="lift" aria-hidden="true">
+          <div class="lift__door lift__door--l"></div>
+          <div class="lift__door lift__door--r"></div>
+          <div class="lift__seam"></div>
+        </div>
+
+        <!-- callouts: shown while the film time is between data-t0 and data-t1 (s); position in % of viewport -->
+        <div class="callout" data-t0="0.7" data-t1="2.6" style="left:57%;top:77%">
+          <span class="callout__dot"></span><span class="callout__line"></span>
+          <span class="callout__text">Arrival court<small>Reflecting pool &amp; olive grove</small></span>
+        </div>
+        <div class="callout" data-t0="3.9" data-t1="6.2" style="left:70%;top:27%">
+          <span class="callout__dot"></span><span class="callout__line"></span>
+          <span class="callout__text">Grand lobby<small>9 m double-height ceiling</small></span>
+        </div>
+        <div class="callout callout--left" data-t0="4.6" data-t1="6.6" style="right:15%;top:71%">
+          <span class="callout__dot"></span><span class="callout__line"></span>
+          <span class="callout__text">Residents&#39; lounge<small>Private, members only</small></span>
+        </div>
+        <div class="callout" data-t0="7.9" data-t1="9.5" style="left:61%;top:52%">
+          <span class="callout__dot"></span><span class="callout__line"></span>
+          <span class="callout__text">Private lifts<small>Street to sky in 40 seconds</small></span>
+        </div>
+        <div class="callout" data-t0="10.3" data-t1="12.6" style="left:68%;top:27%">
+          <span class="callout__dot"></span><span class="callout__line"></span>
+          <span class="callout__text">The Penthouse · L48<small>520 m² · 3 bedrooms</small></span>
+        </div>
+        <div class="callout" data-t0="14.8" data-t1="17.9" style="left:62%;top:23%">
+          <span class="callout__dot"></span><span class="callout__line"></span>
+          <span class="callout__text">Double-height salon<small>7 m ceilings, walls of glass</small></span>
+        </div>
+        <div class="callout" data-t0="22.2" data-t1="26" style="left:62%;top:62%">
+          <span class="callout__dot"></span><span class="callout__line"></span>
+          <span class="callout__text">Private sky terrace<small>18 m heated infinity pool</small></span>
+        </div>
+
+        <!-- chapter copy -->
+        <article class="chapter">
+          <p class="chapter__kicker">Central District · Now selling</p>
+          <h1 class="chapter__title">Your life,<br /><em>elevated.</em></h1>
+          <p class="chapter__body">Forty-eight storeys of light, stone and quiet, rising above the city's most coveted address.</p>
+          <div class="chapter__cta">
+            <a class="btn btn--gold" href="#residences">Explore residences</a>
+            <a class="btn btn--ghost" href="#book">Book a viewing</a>
+          </div>
+        </article>
+        <article class="chapter">
+          <p class="chapter__kicker">Ground floor · Arrival</p>
+          <h2 class="chapter__title">Every return,<br /><em>an arrival.</em></h2>
+          <p class="chapter__body">A reflecting-pool court, a concierge who knows your name, and a nine-metre travertine lobby lit like a gallery.</p>
+          <ul class="chapter__facts"><li><b>9 m</b>Lobby height</li><li><b>24/7</b>Concierge</li></ul>
+        </article>
+        <article class="chapter chapter--lift">
+          <p class="chapter__kicker">Private lift · Ascending</p>
+          <div class="lift__level"><span>Level</span><b data-lift-num>01</b></div>
+          <h2 class="chapter__title">Rise above <em>the noise.</em></h2>
+          <p class="chapter__body">Street to sky in under forty seconds.</p>
+        </article>
+        <article class="chapter">
+          <p class="chapter__kicker">Level 48 · The Penthouse</p>
+          <h2 class="chapter__title">Light is the<br /><em>first luxury.</em></h2>
+          <p class="chapter__body">A double-height salon wrapped in glass, wide-plank oak underfoot and the whole city framed in every room.</p>
+          <ul class="chapter__facts"><li><b>520 m²</b>Interior</li><li><b>3</b>Bedrooms</li><li><b>7 m</b>Ceilings</li></ul>
+        </article>
+        <article class="chapter">
+          <p class="chapter__kicker">Level 48 · Private sky terrace</p>
+          <h2 class="chapter__title">The city,<br /><em>at your feet.</em></h2>
+          <p class="chapter__body">Step out to your own heated infinity pool, a sunset lounge and an outdoor kitchen, forty-eight floors up.</p>
+          <ul class="chapter__facts"><li><b>18 m</b>Infinity pool</li><li><b>360°</b>Views</li></ul>
+        </article>
+        <article class="chapter">
+          <p class="chapter__kicker">Solenne Residences</p>
+          <h2 class="chapter__title">Live above<br /><em>the ordinary.</em></h2>
+          <p class="chapter__body">126 residences, from one-bedroom homes to full-floor sky penthouses. Private viewings by appointment.</p>
+          <div class="chapter__cta">
+            <a class="btn btn--gold" href="#book">Book a private viewing</a>
+            <a class="btn btn--ghost" href="#residences">View residences</a>
+          </div>
+        </article>
+
+        <!-- altitude rail: a floor scale, the marker tracks the camera's level -->
+        <aside class="rail" aria-hidden="true">
+          <span class="rail__label">Altitude</span>
+          <div class="rail__track">
+            <span class="rail__stop" style="bottom:0%">G</span>
+            <span class="rail__stop" style="bottom:25%">L12</span>
+            <span class="rail__stop" style="bottom:50%">L24</span>
+            <span class="rail__stop" style="bottom:75%">L36</span>
+            <span class="rail__stop" style="bottom:100%">L48</span>
+            <span class="rail__marker"></span>
+          </div>
+        </aside>
+
+        <!-- level counter -->
+        <div class="level" aria-live="off">
+          <div class="level__label" data-level-label>Street level</div>
+          <div class="level__row"><span class="level__word">Level</span><span class="level__num" data-level-num>G</span></div>
+        </div>
+
+        <!-- timeline -->
+        <nav class="timeline" aria-label="Film chapters">
+          <div class="timeline__track"><span class="timeline__fill"></span></div>
+          <div class="timeline__stops">
+            <a class="timeline__stop" href="#film" data-jump="street">Street</a>
+            <a class="timeline__stop" href="#film" data-jump="arrival">Arrival</a>
+            <a class="timeline__stop" href="#film" data-jump="ascent">Ascent</a>
+            <a class="timeline__stop" href="#film" data-jump="penthouse">Penthouse</a>
+            <a class="timeline__stop" href="#film" data-jump="terrace">Terrace</a>
+            <a class="timeline__stop" href="#film" data-jump="skyline">Skyline</a>
+          </div>
+        </nav>
+
+        <div class="film__hint"><span>Scroll to enter</span><i></i></div>
+      </div>
+    </section>
+
+    <!-- ================= RESIDENCES ================= -->
+    <section class="section" id="residences">
+      <div class="wrap">
+        <div class="split rv">
+          <div>
+            <p class="eyebrow">The residences</p>
+            <h2 class="h2">A private collection<br /><em>of 126 homes in the sky.</em></h2>
+          </div>
+          <p class="lede">Every residence is a corner residence. Floor-to-ceiling glass, honed limestone, wide-plank European oak and kitchens by Italian makers, with views that change by the hour.</p>
+        </div>
+        <div class="stats rv">
+          <div class="stat"><b>48</b><span>Storeys</span></div>
+          <div class="stat"><b>126</b><span>Residences</span></div>
+          <div class="stat"><b>3.4 m</b><span>Ceiling heights</span></div>
+          <div class="stat"><b>2,400 m²</b><span>Of amenities</span></div>
+        </div>
+        <div class="residences">
+          <article class="res glass rv">
+            <div class="res__media">
+              <div class="res__views" role="group" aria-label="Residence view"><button type="button" class="res__view is-on" data-view="3d" aria-pressed="true">3D</button><button type="button" class="res__view" data-view="plan" aria-pressed="false">Plan</button></div>
+              <figure class="res__model"><img src="images/res-1br.webp" srcset="images/res-1br-560.webp 560w, images/res-1br.webp 900w" sizes="(max-width: 560px) 92vw, (max-width: 1180px) 46vw, 300px" width="900" height="900" alt="3D cutaway of the one-bedroom residence: open kitchen and living room, bedroom with wardrobes, bathroom, separate WC and balcony" loading="lazy" decoding="async" /></figure>
+              <div class="res__plan" aria-hidden="true"><svg class="fp" viewBox="0 0 360 400" role="img" aria-label="Floor plan of the one-bedroom residence: bedroom, bathroom, entry, open kitchen, living and dining room and balcony"><line class="fp-w" x1="30" y1="62" x2="54" y2="62"/><line class="fp-w" x1="132" y1="62" x2="330" y2="62"/><line class="fp-win" x1="54" y1="58.7" x2="132" y2="58.7"/><line class="fp-win" x1="54" y1="62" x2="132" y2="62"/><line class="fp-win" x1="54" y1="65.3" x2="132" y2="65.3"/><line class="fp-w" x1="330" y1="62" x2="330" y2="86"/><line class="fp-w" x1="330" y1="272" x2="330" y2="296"/><line class="fp-win" x1="333.3" y1="86" x2="333.3" y2="272"/><line class="fp-win" x1="330" y1="86" x2="330" y2="272"/><line class="fp-win" x1="326.7" y1="86" x2="326.7" y2="272"/><line class="fp-w" x1="330" y1="296" x2="312" y2="296"/><line class="fp-w" x1="126" y1="296" x2="30" y2="296"/><line class="fp-win" x1="312" y1="299.3" x2="126" y2="299.3"/><line class="fp-win" x1="312" y1="296" x2="126" y2="296"/><line class="fp-win" x1="312" y1="292.7" x2="126" y2="292.7"/><line class="fp-w" x1="30" y1="296" x2="30" y2="288.5"/><line class="fp-w" x1="30" y1="261.5" x2="30" y2="170"/><line class="fp-w" x1="30" y1="86" x2="30" y2="62"/><line class="fp-win" x1="26.7" y1="170" x2="26.7" y2="86"/><line class="fp-win" x1="30" y1="170" x2="30" y2="86"/><line class="fp-win" x1="33.3" y1="170" x2="33.3" y2="86"/><line class="fp-iw" x1="156" y1="62" x2="156" y2="161"/><line class="fp-iw" x1="156" y1="188" x2="156" y2="194"/><line class="fp-iw" x1="30" y1="194" x2="156" y2="194"/><line class="fp-iw" x1="105" y1="194" x2="105" y2="221"/><line class="fp-iw" x1="105" y1="248" x2="105" y2="254"/><line class="fp-iw" x1="30" y1="254" x2="105" y2="254"/><line class="fp-door" x1="156" y1="161" x2="129" y2="161"/><path class="fp-swing" d="M129 161 A27.0 27.0 0 0 0 156 188"/><line class="fp-door" x1="105" y1="221" x2="78" y2="221"/><path class="fp-swing" d="M78 221 A27.0 27.0 0 0 0 105 248"/><line class="fp-door" x1="30" y1="288.5" x2="57" y2="288.5"/><path class="fp-swing" d="M57 288.5 A27.0 27.0 0 0 0 30 261.5"/><rect class="fp-f" x="66" y="71" width="54.0" height="63.0" rx="1.8"/><rect class="fp-f2" x="69.6" y="73.4" width="21.6" height="12.6" rx="2.4"/><rect class="fp-f2" x="94.8" y="73.4" width="21.6" height="12.6" rx="2.4"/><line class="fp-f" x1="66" y1="110.1" x2="120" y2="110.1"/><rect class="fp-f2" x="48" y="72.5" width="13.5" height="13.5"/><rect class="fp-f2" x="124.5" y="72.5" width="13.5" height="13.5"/><rect class="fp-f" x="39" y="177.5" width="84.0" height="13.5"/><rect class="fp-f" x="33.6" y="198.5" width="22.5" height="51.0" rx="2.4"/><rect class="fp-f2" x="36" y="200.9" width="17.7" height="46.2" rx="8.3"/><rect class="fp-f" x="67.5" y="197.6" width="33.0" height="14.4"/><ellipse class="fp-f2" cx="84" cy="204.8" rx="6.0" ry="3.9"/><g transform="rotate(180 91.5 243.5)"><rect class="fp-f" x="85.5" y="233" width="12.0" height="4.8"/><ellipse class="fp-f" cx="91.5" cy="243.5" rx="5.4" ry="7.2"/></g><rect class="fp-f2" x="34.5" y="258.5" width="13.5" height="33.0"/><rect class="fp-f" x="165" y="65.6" width="156.0" height="18.6"/><rect class="fp-f2" x="210" y="69.2" width="18.0" height="11.4" rx="2.4"/><circle class="fp-f2" cx="279" cy="71" r="2.7"/><circle class="fp-f2" cx="288.6" cy="71" r="2.7"/><circle class="fp-f2" cx="279" cy="78.8" r="2.7"/><circle class="fp-f2" cx="288.6" cy="78.8" r="2.7"/><rect class="fp-f" x="198" y="108.5" width="84.0" height="24.0" rx="1.5"/><circle class="fp-f2" cx="213" cy="141.5" r="5.1"/><circle class="fp-f2" cx="231" cy="141.5" r="5.1"/><circle class="fp-f2" cx="249" cy="141.5" r="5.1"/><circle class="fp-f2" cx="267" cy="141.5" r="5.1"/><circle class="fp-f" cx="295.5" cy="174.5" r="16.5"/><circle class="fp-f2" cx="313.5" cy="192.5" r="6.0"/><circle class="fp-f2" cx="277.5" cy="192.5" r="6.0"/><circle class="fp-f2" cx="277.5" cy="156.5" r="6.0"/><circle class="fp-f2" cx="313.5" cy="156.5" r="6.0"/><rect class="fp-rug" x="168" y="191" width="117.0" height="78.0"/><rect class="fp-f" x="174" y="195.5" width="96.0" height="25.5" rx="3.0"/><rect class="fp-f2" x="174" y="195.5" width="96.0" height="6.6"/><rect class="fp-f" x="198" y="230" width="48.0" height="19.5" rx="1.8"/><rect class="fp-f" x="288" y="221" width="24.0" height="24.0" rx="3.6"/><circle class="fp-f2" cx="316.5" cy="279.5" r="9.0"/><circle class="fp-f2" cx="316.5" cy="279.5" r="4.1"/><circle class="fp-f2" cx="120" cy="207.5" r="6.6"/><circle class="fp-f2" cx="120" cy="207.5" r="3.0"/><rect class="fp-terr" x="120" y="296" width="210.0" height="45.0"/><rect class="fp-f2" x="150" y="308" width="21.0" height="21.0" rx="3.0"/><rect class="fp-f2" x="177" y="308" width="21.0" height="21.0" rx="3.0"/><circle class="fp-f" cx="210" cy="318.5" r="9.6"/><text class="fp-lbl" x="93" y="161">BEDROOM</text><text class="fp-sub" x="93" y="171.0">3.9 × 4.2</text><text class="fp-lbl" x="78.6" y="234.5">BATH</text><text class="fp-lbl" x="69" y="279.5">ENTRY</text><text class="fp-lbl" x="243" y="99.5">KITCHEN</text><text class="fp-lbl" x="295.5" y="206.6">DINING</text><text class="fp-lbl" x="219" y="278">LIVING</text><text class="fp-sub" x="219" y="288.0">5.8 × 3.4</text><text class="fp-lbl" x="252" y="323.6">BALCONY</text><g class="fp-meta"><circle cx="326" cy="40" r="11"/><path d="M326 32 L330 45 L326 42 L322 45 Z" class="fp-n"/><text x="326" y="25" class="fp-sub">N</text></g><g class="fp-meta"><line x1="30" y1="372" x2="180" y2="372"/><line x1="30" y1="369" x2="30" y2="375"/><line x1="105" y1="370" x2="105" y2="374"/><line x1="180" y1="369" x2="180" y2="375"/><text x="188" y="375" class="fp-sub" style="text-anchor:start">5 m</text></g><text class="fp-area" x="330" y="376">86 m²</text></svg></div>
+            </div>
+            <div class="res__body">
+              <span class="res__type">Levels 05 – 18</span>
+              <h3 class="res__name">One Bedroom</h3>
+              <div class="res__meta"><span>78 – 92 m²</span><span>1.5 baths</span><span>Balcony</span></div>
+              <div class="res__price"><span>From</span><b>$1.15M</b></div>
+            </div>
+          </article>
+          <article class="res glass rv">
+            <div class="res__media">
+              <div class="res__views" role="group" aria-label="Residence view"><button type="button" class="res__view is-on" data-view="3d" aria-pressed="true">3D</button><button type="button" class="res__view" data-view="plan" aria-pressed="false">Plan</button></div>
+              <figure class="res__model"><img src="images/res-2br.webp" srcset="images/res-2br-560.webp 560w, images/res-2br.webp 900w" sizes="(max-width: 560px) 92vw, (max-width: 1180px) 46vw, 300px" width="900" height="900" alt="3D cutaway of the two-bedroom residence: living and dining room, island kitchen, two bedrooms, two bathrooms and a planted balcony" loading="lazy" decoding="async" /></figure>
+              <div class="res__plan" aria-hidden="true"><svg class="fp" viewBox="0 0 360 400" role="img" aria-label="Floor plan of the two-bedroom residence: two bedrooms, ensuite and family bath, kitchen with island, living and dining room and balcony"><line class="fp-w" x1="30" y1="70" x2="49.4" y2="70"/><line class="fp-w" x1="122" y1="70" x2="330.1" y2="70"/><line class="fp-win" x1="49.4" y1="67.3" x2="122" y2="67.3"/><line class="fp-win" x1="49.4" y1="70" x2="122" y2="70"/><line class="fp-win" x1="49.4" y1="72.7" x2="122" y2="72.7"/><line class="fp-w" x1="330.1" y1="70" x2="330.1" y2="132.9"/><line class="fp-w" x1="330.1" y1="157.1" x2="330.1" y2="171.6"/><line class="fp-w" x1="330.1" y1="278.1" x2="330.1" y2="292.6"/><line class="fp-win" x1="332.7" y1="171.6" x2="332.7" y2="278.1"/><line class="fp-win" x1="330.1" y1="171.6" x2="330.1" y2="278.1"/><line class="fp-win" x1="327.4" y1="171.6" x2="327.4" y2="278.1"/><line class="fp-w" x1="330.1" y1="292.6" x2="320.4" y2="292.6"/><line class="fp-w" x1="146.2" y1="292.6" x2="122" y2="292.6"/><line class="fp-w" x1="44.5" y1="292.6" x2="30" y2="292.6"/><line class="fp-win" x1="320.4" y1="295.3" x2="146.2" y2="295.3"/><line class="fp-win" x1="320.4" y1="292.6" x2="146.2" y2="292.6"/><line class="fp-win" x1="320.4" y1="290" x2="146.2" y2="290"/><line class="fp-win" x1="122" y1="295.3" x2="44.5" y2="295.3"/><line class="fp-win" x1="122" y1="292.6" x2="44.5" y2="292.6"/><line class="fp-win" x1="122" y1="290" x2="44.5" y2="290"/><line class="fp-w" x1="30" y1="292.6" x2="30" y2="278.1"/><line class="fp-w" x1="30" y1="229.7" x2="30" y2="157.1"/><line class="fp-w" x1="30" y1="89.4" x2="30" y2="70"/><line class="fp-win" x1="27.3" y1="278.1" x2="27.3" y2="229.7"/><line class="fp-win" x1="30" y1="278.1" x2="30" y2="229.7"/><line class="fp-win" x1="32.7" y1="278.1" x2="32.7" y2="229.7"/><line class="fp-win" x1="27.3" y1="157.1" x2="27.3" y2="89.4"/><line class="fp-win" x1="30" y1="157.1" x2="30" y2="89.4"/><line class="fp-win" x1="32.7" y1="157.1" x2="32.7" y2="89.4"/><line class="fp-iw" x1="141.3" y1="70" x2="141.3" y2="84.5"/><line class="fp-iw" x1="141.3" y1="106.3" x2="141.3" y2="171.6"/><line class="fp-iw" x1="141.3" y1="128.1" x2="194.6" y2="128.1"/><line class="fp-iw" x1="194.6" y1="70" x2="194.6" y2="128.1"/><line class="fp-iw" x1="30" y1="171.6" x2="97.8" y2="171.6"/><line class="fp-iw" x1="119.5" y1="171.6" x2="141.3" y2="171.6"/><line class="fp-iw" x1="83.2" y1="171.6" x2="83.2" y2="181.3"/><line class="fp-iw" x1="83.2" y1="203.1" x2="83.2" y2="220"/><line class="fp-iw" x1="30" y1="220" x2="92.9" y2="220"/><line class="fp-iw" x1="114.7" y1="220" x2="141.3" y2="220"/><line class="fp-iw" x1="141.3" y1="220" x2="141.3" y2="292.6"/><line class="fp-door" x1="141.3" y1="84.5" x2="163.1" y2="84.5"/><path class="fp-swing" d="M163.1 84.5 A21.8 21.8 0 0 1 141.3 106.3"/><line class="fp-door" x1="97.8" y1="171.6" x2="97.8" y2="149.9"/><path class="fp-swing" d="M97.8 149.9 A21.8 21.8 0 0 1 119.5 171.6"/><line class="fp-door" x1="83.2" y1="181.3" x2="61.5" y2="181.3"/><path class="fp-swing" d="M61.5 181.3 A21.8 21.8 0 0 0 83.2 203.1"/><line class="fp-door" x1="114.7" y1="220" x2="114.7" y2="241.8"/><path class="fp-swing" d="M114.7 241.8 A21.8 21.8 0 0 1 92.9 220"/><line class="fp-door" x1="330.1" y1="157.1" x2="308.3" y2="157.1"/><path class="fp-swing" d="M308.3 157.1 A21.8 21.8 0 0 1 330.1 135.3"/><rect class="fp-f" x="60.3" y="73.6" width="44.8" height="50.8" rx="1.5"/><rect class="fp-f2" x="63.2" y="75.6" width="18.0" height="10.2" rx="1.9"/><rect class="fp-f2" x="84.1" y="75.6" width="18.0" height="10.2" rx="1.9"/><line class="fp-f" x1="60.3" y1="105.1" x2="105" y2="105.1"/><rect class="fp-f2" x="45.7" y="74.8" width="10.9" height="10.9"/><rect class="fp-f2" x="108.6" y="74.8" width="10.9" height="10.9"/><rect class="fp-f" x="128" y="132.9" width="10.9" height="33.9"/><rect class="fp-f" x="146.2" y="100.3" width="24.2" height="24.2"/><line class="fp-f2" x1="146.2" y1="100.3" x2="170.4" y2="124.4"/><line class="fp-f2" x1="170.4" y1="100.3" x2="146.2" y2="124.4"/><rect class="fp-f" x="174" y="73.6" width="16.9" height="27.8"/><ellipse class="fp-f2" cx="182.5" cy="87.5" rx="3.1" ry="4.8"/><g transform="rotate(0 183.7 114.8)"><rect class="fp-f" x="178.8" y="106.3" width="9.7" height="3.9"/><ellipse class="fp-f" cx="183.7" cy="114.8" rx="4.4" ry="5.8"/></g><rect class="fp-f" x="32.9" y="175.3" width="17.4" height="41.1" rx="1.9"/><rect class="fp-f2" x="34.8" y="177.2" width="13.6" height="37.3" rx="6.3"/><rect class="fp-f" x="59" y="174.5" width="20.6" height="10.9"/><ellipse class="fp-f2" cx="69.3" cy="180" rx="4.8" ry="3.1"/><g transform="rotate(180 69.9 211.6)"><rect class="fp-f" x="65.1" y="203.1" width="9.7" height="3.9"/><ellipse class="fp-f" cx="69.9" cy="211.6" rx="4.4" ry="5.8"/></g><rect class="fp-f" x="46.9" y="224.9" width="38.7" height="49.6" rx="1.5"/><rect class="fp-f2" x="49.8" y="226.8" width="15.0" height="10.2" rx="1.9"/><rect class="fp-f2" x="67.8" y="226.8" width="15.0" height="10.2" rx="1.9"/><line class="fp-f" x1="46.9" y1="255.6" x2="85.7" y2="255.6"/><rect class="fp-f2" x="33.6" y="226.1" width="10.9" height="10.9"/><rect class="fp-f" x="123.2" y="234.6" width="13.3" height="36.3"/><rect class="fp-f" x="199.4" y="72.9" width="125.8" height="15.0"/><rect class="fp-f2" x="230.9" y="75.8" width="14.5" height="9.2" rx="1.9"/><circle class="fp-f2" cx="286.5" cy="77.3" r="2.2"/><circle class="fp-f2" cx="294.3" cy="77.3" r="2.2"/><circle class="fp-f2" cx="286.5" cy="83.6" r="2.2"/><circle class="fp-f2" cx="294.3" cy="83.6" r="2.2"/><rect class="fp-f" x="223.6" y="107.5" width="72.6" height="19.4" rx="1.2"/><circle class="fp-f2" cx="235.7" cy="134.1" r="4.1"/><circle class="fp-f2" cx="251.7" cy="134.1" r="4.1"/><circle class="fp-f2" cx="267.6" cy="134.1" r="4.1"/><circle class="fp-f2" cx="283.6" cy="134.1" r="4.1"/><rect class="fp-f" x="165.5" y="159.5" width="62.9" height="24.2" rx="1.0"/><rect class="fp-f2" x="170.9" y="147.4" width="10.2" height="10.2" rx="1.5"/><rect class="fp-f2" x="170.9" y="185.7" width="10.2" height="10.2" rx="1.5"/><rect class="fp-f2" x="191.9" y="147.4" width="10.2" height="10.2" rx="1.5"/><rect class="fp-f2" x="191.9" y="185.7" width="10.2" height="10.2" rx="1.5"/><rect class="fp-f2" x="212.9" y="147.4" width="10.2" height="10.2" rx="1.5"/><rect class="fp-f2" x="212.9" y="185.7" width="10.2" height="10.2" rx="1.5"/><rect class="fp-rug" x="223.6" y="191" width="96.8" height="84.7"/><rect class="fp-f" x="233.3" y="195.8" width="72.6" height="20.6" rx="2.4"/><rect class="fp-f2" x="233.3" y="195.8" width="72.6" height="5.3"/><rect class="fp-f" x="305.9" y="195.8" width="20.6" height="62.9" rx="2.4"/><rect class="fp-f2" x="321.1" y="195.8" width="5.3" height="62.9"/><rect class="fp-f" x="247.8" y="224.9" width="38.7" height="19.4" rx="1.5"/><rect class="fp-f" x="226" y="246.7" width="19.4" height="19.4" rx="2.9"/><circle class="fp-f2" cx="152.2" cy="280.5" r="7.3"/><circle class="fp-f2" cx="152.2" cy="280.5" r="3.3"/><circle class="fp-f2" cx="320.4" cy="93" r="5.3"/><circle class="fp-f2" cx="320.4" cy="93" r="2.4"/><rect class="fp-terr" x="136.5" y="292.6" width="193.6" height="36.3"/><rect class="fp-f2" x="262.3" y="301.1" width="16.9" height="18.1" rx="2.4"/><rect class="fp-f2" x="284.1" y="301.1" width="16.9" height="18.1" rx="2.4"/><circle class="fp-f" cx="151" cy="310.8" r="8.2"/><text class="fp-lbl" x="74.8" y="139">BEDROOM 1</text><text class="fp-sub" x="74.8" y="149.0">4.4 × 4.0</text><text class="fp-lbl fp-lbl-s" x="161.9" y="88.2">ENSUITE</text><text class="fp-lbl" x="67.5" y="198.7">BATH</text><text class="fp-lbl" x="112.3" y="198.7">HALL</text><text class="fp-lbl" x="92.9" y="284.2">BEDROOM 2</text><text class="fp-lbl" x="259.9" y="100.3">KITCHEN</text><text class="fp-lbl" x="197" y="204.3">DINING</text><text class="fp-lbl" x="272" y="273.3">LIVING</text><text class="fp-sub" x="272" y="283.3">7.8 × 4.6</text><text class="fp-lbl" x="309.5" y="149.9">ENTRY</text><text class="fp-lbl" x="201.8" y="314.4">BALCONY</text><g class="fp-meta"><circle cx="326" cy="40" r="11"/><path d="M326 32 L330 45 L326 42 L322 45 Z" class="fp-n"/><text x="326" y="25" class="fp-sub">N</text></g><g class="fp-meta"><line x1="30" y1="372" x2="151" y2="372"/><line x1="30" y1="369" x2="30" y2="375"/><line x1="90.5" y1="370" x2="90.5" y2="374"/><line x1="151" y1="369" x2="151" y2="375"/><text x="159" y="375" class="fp-sub" style="text-anchor:start">5 m</text></g><text class="fp-area" x="330" y="376">132 m²</text></svg></div>
+            </div>
+            <div class="res__body">
+              <span class="res__type">Levels 12 – 30</span>
+              <h3 class="res__name">Two Bedroom</h3>
+              <div class="res__meta"><span>118 – 146 m²</span><span>2 baths</span><span>Corner</span></div>
+              <div class="res__price"><span>From</span><b>$1.85M</b></div>
+            </div>
+          </article>
+          <article class="res glass rv">
+            <div class="res__media">
+              <div class="res__views" role="group" aria-label="Residence view"><button type="button" class="res__view is-on" data-view="3d" aria-pressed="true">3D</button><button type="button" class="res__view" data-view="plan" aria-pressed="false">Plan</button></div>
+              <figure class="res__model"><img src="images/res-3br.webp" srcset="images/res-3br-560.webp 560w, images/res-3br.webp 900w" sizes="(max-width: 560px) 92vw, (max-width: 1180px) 46vw, 300px" width="900" height="900" alt="Top-down 3D plan of the three-bedroom residence: three bedrooms, open living, dining and kitchen, and a planted terrace" loading="lazy" decoding="async" /></figure>
+              <div class="res__plan" aria-hidden="true"><svg class="fp" viewBox="0 0 360 400" role="img" aria-label="Floor plan of the three-bedroom corner residence: principal suite with dressing room, two further bedrooms, kitchen, living and dining room and wraparound terrace"><line class="fp-w" x1="30" y1="80" x2="45.1" y2="80"/><line class="fp-w" x1="105.6" y1="80" x2="124.5" y2="80"/><line class="fp-w" x1="143.4" y1="80" x2="237.9" y2="80"/><line class="fp-w" x1="290.8" y1="80" x2="302.2" y2="80"/><line class="fp-win" x1="45.1" y1="77.9" x2="105.6" y2="77.9"/><line class="fp-win" x1="45.1" y1="80" x2="105.6" y2="80"/><line class="fp-win" x1="45.1" y1="82.1" x2="105.6" y2="82.1"/><line class="fp-win" x1="237.9" y1="77.9" x2="290.8" y2="77.9"/><line class="fp-win" x1="237.9" y1="80" x2="290.8" y2="80"/><line class="fp-win" x1="237.9" y1="82.1" x2="290.8" y2="82.1"/><line class="fp-w" x1="302.2" y1="80" x2="302.2" y2="91.3"/><line class="fp-w" x1="302.2" y1="144.3" x2="302.2" y2="166.9"/><line class="fp-w" x1="302.2" y1="265.2" x2="302.2" y2="276.6"/><line class="fp-win" x1="304.2" y1="91.3" x2="304.2" y2="144.3"/><line class="fp-win" x1="302.2" y1="91.3" x2="302.2" y2="144.3"/><line class="fp-win" x1="300.1" y1="91.3" x2="300.1" y2="144.3"/><line class="fp-win" x1="304.2" y1="166.9" x2="304.2" y2="265.2"/><line class="fp-win" x1="302.2" y1="166.9" x2="302.2" y2="265.2"/><line class="fp-win" x1="300.1" y1="166.9" x2="300.1" y2="265.2"/><line class="fp-w" x1="302.2" y1="276.6" x2="290.8" y2="276.6"/><line class="fp-w" x1="128.3" y1="276.6" x2="109.4" y2="276.6"/><line class="fp-w" x1="41.3" y1="276.6" x2="30" y2="276.6"/><line class="fp-win" x1="290.8" y1="278.6" x2="128.3" y2="278.6"/><line class="fp-win" x1="290.8" y1="276.6" x2="128.3" y2="276.6"/><line class="fp-win" x1="290.8" y1="274.5" x2="128.3" y2="274.5"/><line class="fp-win" x1="109.4" y1="278.6" x2="41.3" y2="278.6"/><line class="fp-win" x1="109.4" y1="276.6" x2="41.3" y2="276.6"/><line class="fp-win" x1="109.4" y1="274.5" x2="41.3" y2="274.5"/><line class="fp-w" x1="30" y1="276.6" x2="30" y2="265.2"/><line class="fp-w" x1="30" y1="219.9" x2="30" y2="151.8"/><line class="fp-w" x1="30" y1="95.1" x2="30" y2="80"/><line class="fp-win" x1="27.9" y1="265.2" x2="27.9" y2="219.9"/><line class="fp-win" x1="30" y1="265.2" x2="30" y2="219.9"/><line class="fp-win" x1="32.1" y1="265.2" x2="32.1" y2="219.9"/><line class="fp-win" x1="27.9" y1="151.8" x2="27.9" y2="95.1"/><line class="fp-win" x1="30" y1="151.8" x2="30" y2="95.1"/><line class="fp-win" x1="32.1" y1="151.8" x2="32.1" y2="95.1"/><line class="fp-iw" x1="120.7" y1="80" x2="120.7" y2="219.9"/><line class="fp-iw" x1="120.7" y1="236.9" x2="120.7" y2="276.6"/><line class="fp-iw" x1="30" y1="166.9" x2="56.5" y2="166.9"/><line class="fp-iw" x1="71.6" y1="166.9" x2="86.7" y2="166.9"/><line class="fp-iw" x1="113.2" y1="166.9" x2="120.7" y2="166.9"/><line class="fp-iw" x1="79.1" y1="166.9" x2="79.1" y2="208.5"/><line class="fp-iw" x1="30" y1="208.5" x2="120.7" y2="208.5"/><line class="fp-iw" x1="188.8" y1="80" x2="188.8" y2="125.4"/><line class="fp-iw" x1="188.8" y1="125.4" x2="196.3" y2="125.4"/><line class="fp-iw" x1="211.4" y1="125.4" x2="226.6" y2="125.4"/><line class="fp-iw" x1="226.6" y1="80" x2="226.6" y2="155.6"/><line class="fp-iw" x1="226.6" y1="155.6" x2="234.1" y2="155.6"/><line class="fp-iw" x1="251.1" y1="155.6" x2="302.2" y2="155.6"/><line class="fp-door" x1="56.5" y1="166.9" x2="56.5" y2="182.1"/><path class="fp-swing" d="M56.5 182.1 A15.1 15.1 0 0 0 71.6 166.9"/><line class="fp-door" x1="120.7" y1="236.9" x2="103.7" y2="236.9"/><path class="fp-swing" d="M103.7 236.9 A17.0 17.0 0 0 1 120.7 219.9"/><line class="fp-door" x1="196.3" y1="125.4" x2="196.3" y2="110.2"/><path class="fp-swing" d="M196.3 110.2 A15.1 15.1 0 0 1 211.4 125.4"/><line class="fp-door" x1="234.1" y1="155.6" x2="234.1" y2="138.6"/><path class="fp-swing" d="M234.1 138.6 A17.0 17.0 0 0 1 251.1 155.6"/><line class="fp-door" x1="143.4" y1="80" x2="143.4" y2="98.9"/><path class="fp-swing" d="M143.4 98.9 A18.9 18.9 0 0 1 124.5 80"/><rect class="fp-f" x="57.4" y="82.8" width="35.0" height="40.6" rx="1.1"/><rect class="fp-f2" x="59.7" y="84.3" width="14.1" height="7.9" rx="1.5"/><rect class="fp-f2" x="76" y="84.3" width="14.1" height="7.9" rx="1.5"/><line class="fp-f" x1="57.4" y1="108" x2="92.4" y2="108"/><rect class="fp-f2" x="46.1" y="83.8" width="8.5" height="8.5"/><rect class="fp-f2" x="95.2" y="83.8" width="8.5" height="8.5"/><rect class="fp-f" x="32.3" y="170.7" width="13.6" height="34.0" rx="1.5"/><rect class="fp-f2" x="33.8" y="172.2" width="10.6" height="31.0" rx="4.9"/><rect class="fp-f" x="50.8" y="197.2" width="25.5" height="8.5"/><ellipse class="fp-f2" cx="57.2" cy="201.4" rx="3.8" ry="2.5"/><ellipse class="fp-f2" cx="69.9" cy="201.4" rx="3.8" ry="2.5"/><g transform="rotate(0 71.6 181.1)"><rect class="fp-f" x="67.8" y="174.5" width="7.6" height="3.0"/><ellipse class="fp-f" cx="71.6" cy="181.1" rx="3.4" ry="4.5"/></g><rect class="fp-f" x="82" y="169.8" width="35.9" height="7.2"/><rect class="fp-f" x="82" y="198.7" width="35.9" height="7.2"/><rect class="fp-f" x="47" y="212.3" width="30.2" height="38.7" rx="1.1"/><rect class="fp-f2" x="49.3" y="213.8" width="11.7" height="7.9" rx="1.5"/><rect class="fp-f2" x="63.3" y="213.8" width="11.7" height="7.9" rx="1.5"/><line class="fp-f" x1="47" y1="236.3" x2="77.3" y2="236.3"/><rect class="fp-f2" x="35.7" y="213.2" width="8.5" height="8.5"/><rect class="fp-f2" x="80.1" y="213.2" width="8.5" height="8.5"/><rect class="fp-f" x="191.6" y="82.8" width="18.0" height="18.0"/><line class="fp-f2" x1="191.6" y1="82.8" x2="209.5" y2="100.8"/><line class="fp-f2" x1="209.5" y1="82.8" x2="191.6" y2="100.8"/><rect class="fp-f" x="212.4" y="82.8" width="11.3" height="22.7"/><ellipse class="fp-f2" cx="218.1" cy="94.2" rx="2.5" ry="3.8"/><g transform="rotate(0 200.1 115)"><rect class="fp-f" x="196.3" y="108.3" width="7.6" height="3.0"/><ellipse class="fp-f" cx="200.1" cy="115" rx="3.4" ry="4.5"/></g><rect class="fp-f" x="249.2" y="82.8" width="31.2" height="38.7" rx="1.1"/><rect class="fp-f2" x="251.5" y="84.3" width="12.2" height="7.9" rx="1.5"/><rect class="fp-f2" x="266" y="84.3" width="12.2" height="7.9" rx="1.5"/><line class="fp-f" x1="249.2" y1="106.9" x2="280.4" y2="106.9"/><rect class="fp-f2" x="237.9" y="83.8" width="8.5" height="8.5"/><rect class="fp-f2" x="283.3" y="83.8" width="8.5" height="8.5"/><rect class="fp-f" x="147.2" y="82.3" width="38.7" height="11.7"/><rect class="fp-f2" x="152.8" y="84.5" width="11.3" height="7.2" rx="1.5"/><rect class="fp-f" x="123.6" y="129.1" width="11.7" height="26.5"/><circle class="fp-f2" cx="125.4" cy="133.9" r="1.7"/><circle class="fp-f2" cx="131.5" cy="133.9" r="1.7"/><circle class="fp-f2" cx="125.4" cy="138.8" r="1.7"/><circle class="fp-f2" cx="131.5" cy="138.8" r="1.7"/><rect class="fp-f" x="147.2" y="110.2" width="35.9" height="15.1" rx="0.9"/><circle class="fp-f2" cx="153.8" cy="131" r="3.2"/><circle class="fp-f2" cx="165.1" cy="131" r="3.2"/><circle class="fp-f2" cx="176.5" cy="131" r="3.2"/><rect class="fp-f" x="141.5" y="166.9" width="52.9" height="19.8" rx="0.8"/><rect class="fp-f2" x="146.4" y="157.5" width="7.9" height="7.9" rx="1.1"/><rect class="fp-f2" x="146.4" y="188.3" width="7.9" height="7.9" rx="1.1"/><rect class="fp-f2" x="164" y="157.5" width="7.9" height="7.9" rx="1.1"/><rect class="fp-f2" x="164" y="188.3" width="7.9" height="7.9" rx="1.1"/><rect class="fp-f2" x="181.6" y="157.5" width="7.9" height="7.9" rx="1.1"/><rect class="fp-f2" x="181.6" y="188.3" width="7.9" height="7.9" rx="1.1"/><rect class="fp-f2" x="132.1" y="172.9" width="7.9" height="7.9" rx="1.1"/><rect class="fp-f2" x="195.9" y="172.9" width="7.9" height="7.9" rx="1.1"/><rect class="fp-rug" x="186.9" y="185.8" width="102.1" height="69.9"/><rect class="fp-f" x="194.4" y="189.6" width="71.8" height="16.1" rx="1.9"/><rect class="fp-f2" x="194.4" y="189.6" width="71.8" height="4.2"/><rect class="fp-f" x="267.2" y="189.6" width="16.1" height="51.0" rx="1.9"/><rect class="fp-f2" x="279.1" y="189.6" width="4.2" height="51.0"/><rect class="fp-f" x="211.4" y="214.2" width="37.8" height="16.1" rx="1.1"/><rect class="fp-f" x="190.6" y="236.9" width="15.1" height="15.1" rx="2.3"/><rect class="fp-f" x="222.8" y="236.9" width="15.1" height="15.1" rx="2.3"/><circle class="fp-f2" cx="130.2" cy="267.1" r="4.7"/><circle class="fp-f2" cx="130.2" cy="267.1" r="2.1"/><circle class="fp-f2" cx="292.7" cy="165.1" r="4.2"/><circle class="fp-f2" cx="292.7" cy="165.1" r="1.9"/><rect class="fp-terr" x="120.7" y="276.6" width="209.8" height="28.3"/><rect class="fp-terr" x="302.2" y="163.2" width="28.3" height="113.4"/><circle class="fp-f" cx="135.8" cy="290.7" r="7.6"/><rect class="fp-f2" x="219" y="283.2" width="14.2" height="15.1" rx="1.9"/><rect class="fp-f2" x="237.9" y="283.2" width="14.2" height="15.1" rx="1.9"/><text class="fp-lbl" x="75.4" y="140.5">BEDROOM 1</text><text class="fp-sub" x="75.4" y="150.5">4.6 × 4.4</text><text class="fp-lbl fp-lbl-s" x="58.3" y="188.7" transform="rotate(-90 58.3 188.7)">ENSUITE</text><text class="fp-lbl fp-lbl-s" x="99.9" y="190.6">DRESS</text><text class="fp-lbl" x="75.4" y="264.3">BEDROOM 2</text><text class="fp-lbl fp-lbl-s" x="216.2" y="117.8">BATH</text><text class="fp-lbl" x="268.1" y="135.8">BEDROOM 3</text><text class="fp-lbl" x="168" y="104.6">KITCHEN</text><text class="fp-lbl" x="168" y="205.7">DINING</text><text class="fp-lbl" x="237.9" y="260.5">LIVING</text><text class="fp-sub" x="237.9" y="270.5">9.6 × 5.4</text><text class="fp-lbl" x="200.1" y="294.5">TERRACE</text><g class="fp-meta"><circle cx="326" cy="40" r="11"/><path d="M326 32 L330 45 L326 42 L322 45 Z" class="fp-n"/><text x="326" y="25" class="fp-sub">N</text></g><g class="fp-meta"><line x1="30" y1="372" x2="124.5" y2="372"/><line x1="30" y1="369" x2="30" y2="375"/><line x1="77.25" y1="370" x2="77.25" y2="374"/><line x1="124.5" y1="369" x2="124.5" y2="375"/><text x="132.5" y="375" class="fp-sub" style="text-anchor:start">5 m</text></g><text class="fp-area" x="330" y="376">238 m²</text></svg></div>
+            </div>
+            <div class="res__body">
+              <span class="res__type">Levels 31 – 44</span>
+              <h3 class="res__name">Three Bedroom</h3>
+              <div class="res__meta"><span>210 – 245 m²</span><span>2.5 baths</span><span>Terrace</span></div>
+              <div class="res__price"><span>From</span><b>$3.40M</b></div>
+            </div>
+          </article>
+          <article class="res glass rv">
+            <div class="res__media">
+              <div class="res__views" role="group" aria-label="Residence view"><button type="button" class="res__view is-on" data-view="3d" aria-pressed="true">3D</button><button type="button" class="res__view" data-view="plan" aria-pressed="false">Plan</button></div>
+              <figure class="res__model"><img src="images/res-pent.webp" srcset="images/res-pent-560.webp 560w, images/res-pent.webp 900w" sizes="(max-width: 560px) 92vw, (max-width: 1180px) 46vw, 300px" width="900" height="900" alt="3D cutaway of the Sky Penthouse: principal suite, double-height salon with fireplace, kitchen, dining and the sky terrace with infinity pool" loading="lazy" decoding="async" /></figure>
+              <div class="res__plan" aria-hidden="true"><svg class="fp" viewBox="0 0 360 400" role="img" aria-label="Floor plan of the sky penthouse main level: principal suite with dressing room, second bedroom, double-height salon, kitchen, dining room, private lift and sky terrace with infinity pool"><line class="fp-w" x1="30" y1="92" x2="42" y2="92"/><line class="fp-w" x1="99" y1="92" x2="141" y2="92"/><line class="fp-w" x1="162" y1="92" x2="168" y2="92"/><line class="fp-w" x1="189" y1="92" x2="198" y2="92"/><line class="fp-w" x1="213" y1="92" x2="285" y2="92"/><line class="fp-w" x1="324" y1="92" x2="330" y2="92"/><line class="fp-win" x1="42" y1="90.3" x2="99" y2="90.3"/><line class="fp-win" x1="42" y1="92" x2="99" y2="92"/><line class="fp-win" x1="42" y1="93.7" x2="99" y2="93.7"/><line class="fp-win" x1="141" y1="90.3" x2="162" y2="90.3"/><line class="fp-win" x1="141" y1="92" x2="162" y2="92"/><line class="fp-win" x1="141" y1="93.7" x2="162" y2="93.7"/><line class="fp-win" x1="198" y1="90.3" x2="213" y2="90.3"/><line class="fp-win" x1="198" y1="92" x2="213" y2="92"/><line class="fp-win" x1="198" y1="93.7" x2="213" y2="93.7"/><line class="fp-win" x1="285" y1="90.3" x2="324" y2="90.3"/><line class="fp-win" x1="285" y1="92" x2="324" y2="92"/><line class="fp-win" x1="285" y1="93.7" x2="324" y2="93.7"/><line class="fp-w" x1="330" y1="92" x2="330" y2="155"/><line class="fp-w" x1="330" y1="221" x2="330" y2="227"/><line class="fp-win" x1="331.6" y1="155" x2="331.6" y2="221"/><line class="fp-win" x1="330" y1="155" x2="330" y2="221"/><line class="fp-win" x1="328.4" y1="155" x2="328.4" y2="221"/><line class="fp-w" x1="330" y1="227" x2="321" y2="227"/><line class="fp-w" x1="291" y1="227" x2="270" y2="227"/><line class="fp-w" x1="165" y1="227" x2="147" y2="227"/><line class="fp-w" x1="90" y1="227" x2="30" y2="227"/><line class="fp-win" x1="321" y1="228.6" x2="291" y2="228.6"/><line class="fp-win" x1="321" y1="227" x2="291" y2="227"/><line class="fp-win" x1="321" y1="225.4" x2="291" y2="225.4"/><line class="fp-win" x1="270" y1="228.6" x2="165" y2="228.6"/><line class="fp-win" x1="270" y1="227" x2="165" y2="227"/><line class="fp-win" x1="270" y1="225.4" x2="165" y2="225.4"/><line class="fp-win" x1="147" y1="228.6" x2="90" y2="228.6"/><line class="fp-win" x1="147" y1="227" x2="90" y2="227"/><line class="fp-win" x1="147" y1="225.4" x2="90" y2="225.4"/><line class="fp-w" x1="30" y1="227" x2="30" y2="215"/><line class="fp-w" x1="30" y1="161" x2="30" y2="92"/><line class="fp-win" x1="28.4" y1="215" x2="28.4" y2="161"/><line class="fp-win" x1="30" y1="215" x2="30" y2="161"/><line class="fp-win" x1="31.6" y1="215" x2="31.6" y2="161"/><line class="fp-iw" x1="112.5" y1="92" x2="112.5" y2="149"/><line class="fp-iw" x1="112.5" y1="164" x2="112.5" y2="227"/><line class="fp-iw" x1="30" y1="170" x2="45" y2="170"/><line class="fp-iw" x1="57" y1="170" x2="81" y2="170"/><line class="fp-iw" x1="105" y1="170" x2="112.5" y2="170"/><line class="fp-iw" x1="73.5" y1="170" x2="73.5" y2="227"/><line class="fp-iw" x1="277.5" y1="92" x2="277.5" y2="152"/><line class="fp-iw" x1="277.5" y1="165.5" x2="277.5" y2="227"/><line class="fp-iw" x1="277.5" y1="146" x2="309" y2="146"/><line class="fp-iw" x1="321" y1="146" x2="330" y2="146"/><line class="fp-door" x1="112.5" y1="149" x2="99" y2="149"/><path class="fp-swing" d="M99 149 A13.5 13.5 0 0 0 112.5 162.5"/><line class="fp-door" x1="45" y1="170" x2="45" y2="182"/><path class="fp-swing" d="M45 182 A12.0 12.0 0 0 0 57 170"/><line class="fp-door" x1="277.5" y1="152" x2="291" y2="152"/><path class="fp-swing" d="M291 152 A13.5 13.5 0 0 1 277.5 165.5"/><line class="fp-door" x1="309" y1="146" x2="309" y2="134"/><path class="fp-swing" d="M309 134 A12.0 12.0 0 0 1 321 146"/><line class="fp-door" x1="168" y1="92" x2="168" y2="102.5"/><path class="fp-swing" d="M168 102.5 A10.5 10.5 0 0 0 178.5 92"/><line class="fp-door" x1="189" y1="92" x2="189" y2="102.5"/><path class="fp-swing" d="M189 102.5 A10.5 10.5 0 0 1 178.5 92"/><rect class="fp-iwr" x="165" y="69.5" width="27.0" height="19.5"/><line class="fp-f2" x1="178.5" y1="69.5" x2="178.5" y2="89"/><rect class="fp-f" x="57" y="94.3" width="27.8" height="32.3" rx="0.9"/><rect class="fp-f2" x="58.8" y="95.5" width="11.2" height="6.3" rx="1.2"/><rect class="fp-f2" x="71.8" y="95.5" width="11.2" height="6.3" rx="1.2"/><line class="fp-f" x1="57" y1="114.2" x2="84.8" y2="114.2"/><rect class="fp-f2" x="48" y="95" width="6.8" height="6.8"/><rect class="fp-f2" x="87" y="95" width="6.8" height="6.8"/><rect class="fp-f" x="33.8" y="180.5" width="12.0" height="26.3" rx="1.2"/><rect class="fp-f2" x="35" y="181.7" width="9.6" height="23.9" rx="4.5"/><rect class="fp-f" x="63.8" y="174.5" width="7.2" height="27.0"/><ellipse class="fp-f2" cx="67.3" cy="181.3" rx="2.0" ry="3.0"/><ellipse class="fp-f2" cx="67.3" cy="194.8" rx="2.0" ry="3.0"/><rect class="fp-f" x="32.3" y="209.8" width="18.8" height="15.0"/><line class="fp-f2" x1="32.3" y1="209.8" x2="51" y2="224.8"/><line class="fp-f2" x1="51" y1="209.8" x2="32.3" y2="224.8"/><g transform="rotate(0 64.5 217.3)"><rect class="fp-f" x="61.5" y="212" width="6.0" height="2.4"/><ellipse class="fp-f" cx="64.5" cy="217.3" rx="2.7" ry="3.6"/></g><rect class="fp-f" x="75.8" y="172.3" width="34.5" height="5.7"/><rect class="fp-f" x="75.8" y="219.1" width="34.5" height="5.7"/><rect class="fp-f" x="86.3" y="191" width="14.3" height="15.0" rx="0.8"/><rect class="fp-f" x="116.3" y="96.5" width="20.3" height="46.5"/><line class="fp-f2" x1="116.3" y1="101.2" x2="136.5" y2="101.2"/><line class="fp-f2" x1="116.3" y1="105.8" x2="136.5" y2="105.8"/><line class="fp-f2" x1="116.3" y1="110.5" x2="136.5" y2="110.5"/><line class="fp-f2" x1="116.3" y1="115.1" x2="136.5" y2="115.1"/><line class="fp-f2" x1="116.3" y1="119.8" x2="136.5" y2="119.8"/><line class="fp-f2" x1="116.3" y1="124.4" x2="136.5" y2="124.4"/><line class="fp-f2" x1="116.3" y1="129.1" x2="136.5" y2="129.1"/><line class="fp-f2" x1="116.3" y1="133.7" x2="136.5" y2="133.7"/><line class="fp-f2" x1="116.3" y1="138.3" x2="136.5" y2="138.3"/><line class="fp-arrow" x1="126.4" y1="140" x2="126.4" y2="101.8"/><path class="fp-arrowhead" d="M123.7 104.8 L126.4 101 L129.1 104.8"/><rect class="fp-void" x="139.5" y="96.5" width="76.5" height="126.0"/><rect class="fp-rug" x="144" y="135.5" width="69.0" height="73.5"/><rect class="fp-f" x="148.5" y="138.5" width="51.0" height="12.8" rx="1.5"/><rect class="fp-f2" x="148.5" y="138.5" width="51.0" height="3.3"/><rect class="fp-f" x="148.5" y="192.5" width="51.0" height="12.8" rx="1.5"/><rect class="fp-f2" x="148.5" y="201.9" width="51.0" height="3.3"/><rect class="fp-f" x="160.5" y="160.3" width="27.0" height="23.3" rx="0.9"/><rect class="fp-f" x="204.8" y="155" width="11.3" height="11.3" rx="1.8"/><rect class="fp-f" x="204.8" y="176" width="11.3" height="11.3" rx="1.8"/><circle class="fp-ring" cx="174" cy="171.9" r="18.8"/><circle class="fp-ring" cx="174" cy="171.9" r="12.8"/><rect class="fp-f" x="220.5" y="93.8" width="54.0" height="9.3"/><rect class="fp-f2" x="229.5" y="95.6" width="9.0" height="5.7" rx="1.2"/><circle class="fp-f2" cx="258" cy="96.5" r="1.3"/><circle class="fp-f2" cx="262.8" cy="96.5" r="1.3"/><circle class="fp-f2" cx="258" cy="100.4" r="1.3"/><circle class="fp-f2" cx="262.8" cy="100.4" r="1.3"/><rect class="fp-f" x="228" y="113.8" width="39.0" height="12.0" rx="0.8"/><circle class="fp-f2" cx="234" cy="130.3" r="2.6"/><circle class="fp-f2" cx="243" cy="130.3" r="2.6"/><circle class="fp-f2" cx="252" cy="130.3" r="2.6"/><circle class="fp-f2" cx="261" cy="130.3" r="2.6"/><rect class="fp-f" x="238.5" y="152" width="18.0" height="49.5" rx="0.6"/><rect class="fp-f2" x="231" y="155" width="6.3" height="6.3" rx="0.9"/><rect class="fp-f2" x="257.7" y="155" width="6.3" height="6.3" rx="0.9"/><rect class="fp-f2" x="231" y="167.4" width="6.3" height="6.3" rx="0.9"/><rect class="fp-f2" x="257.7" y="167.4" width="6.3" height="6.3" rx="0.9"/><rect class="fp-f2" x="231" y="179.8" width="6.3" height="6.3" rx="0.9"/><rect class="fp-f2" x="257.7" y="179.8" width="6.3" height="6.3" rx="0.9"/><rect class="fp-f2" x="231" y="192.2" width="6.3" height="6.3" rx="0.9"/><rect class="fp-f2" x="257.7" y="192.2" width="6.3" height="6.3" rx="0.9"/><rect class="fp-f2" x="244.3" y="144.5" width="6.3" height="6.3" rx="0.9"/><rect class="fp-f2" x="244.3" y="202.7" width="6.3" height="6.3" rx="0.9"/><rect class="fp-f" x="298.5" y="167" width="30.7" height="24.8" rx="0.9"/><rect class="fp-f2" x="321.8" y="168.8" width="6.3" height="9.7" rx="1.2"/><rect class="fp-f2" x="321.8" y="180.3" width="6.3" height="9.7" rx="1.2"/><line class="fp-f" x1="310.2" y1="167" x2="310.2" y2="191.8"/><rect class="fp-f2" x="321.8" y="158.8" width="6.8" height="6.8"/><rect class="fp-f2" x="321.8" y="194" width="6.8" height="6.8"/><rect class="fp-f" x="279.8" y="94.3" width="15.0" height="15.0"/><line class="fp-f2" x1="279.8" y1="94.3" x2="294.8" y2="109.3"/><line class="fp-f2" x1="294.8" y1="94.3" x2="279.8" y2="109.3"/><rect class="fp-f" x="298.5" y="93.8" width="28.5" height="6.8"/><ellipse class="fp-f2" cx="305.6" cy="97.2" rx="3.0" ry="2.0"/><ellipse class="fp-f2" cx="319.9" cy="97.2" rx="3.0" ry="2.0"/><g transform="rotate(270 322.5 113.8)"><rect class="fp-f" x="319.5" y="108.5" width="6.0" height="2.4"/><ellipse class="fp-f" cx="322.5" cy="113.8" rx="2.7" ry="3.6"/></g><rect class="fp-terr" x="30" y="227" width="300.0" height="78.0"/><rect class="fp-pool" x="135" y="266" width="135.0" height="28.5"/><line class="fp-edge" x1="135" y1="294.5" x2="270" y2="294.5"/><rect class="fp-f2" x="141" y="236" width="10.5" height="25.5" rx="1.8"/><rect class="fp-f2" x="156.8" y="236" width="10.5" height="25.5" rx="1.8"/><rect class="fp-f2" x="172.5" y="236" width="10.5" height="25.5" rx="1.8"/><rect class="fp-f2" x="188.3" y="236" width="10.5" height="25.5" rx="1.8"/><circle class="fp-f" cx="303" cy="266" r="14.3"/><circle class="fp-f2" cx="303" cy="266" r="7.5"/><rect class="fp-f" x="51" y="255.5" width="39.0" height="15.0" rx="0.6"/><rect class="fp-f2" x="54.3" y="248" width="6.3" height="6.3" rx="0.9"/><rect class="fp-f2" x="54.3" y="271.7" width="6.3" height="6.3" rx="0.9"/><rect class="fp-f2" x="67.3" y="248" width="6.3" height="6.3" rx="0.9"/><rect class="fp-f2" x="67.3" y="271.7" width="6.3" height="6.3" rx="0.9"/><rect class="fp-f2" x="80.3" y="248" width="6.3" height="6.3" rx="0.9"/><rect class="fp-f2" x="80.3" y="271.7" width="6.3" height="6.3" rx="0.9"/><circle class="fp-f2" cx="114" cy="239" r="4.5"/><circle class="fp-f2" cx="114" cy="239" r="2.0"/><circle class="fp-f2" cx="283.5" cy="296" r="4.5"/><circle class="fp-f2" cx="283.5" cy="296" r="2.0"/><circle class="fp-f2" cx="39" cy="296" r="4.5"/><circle class="fp-f2" cx="39" cy="296" r="2.0"/><text class="fp-lbl fp-lbl-s" x="71.3" y="140.8">PRINCIPAL SUITE</text><text class="fp-lbl fp-lbl-s" x="55.2" y="193.3" transform="rotate(-90 55.2 193.3)">ENSUITE</text><text class="fp-lbl fp-lbl-s" x="93" y="214.3">DRESSING</text><text class="fp-lbl" x="177.8" y="116">SALON</text><text class="fp-sub" x="177.8" y="126.0">7 m ceiling</text><text class="fp-lbl fp-lbl-s" x="247.5" y="110">KITCHEN</text><text class="fp-lbl fp-lbl-s" x="247.5" y="219.5">DINING</text><text class="fp-lbl fp-lbl-s" x="303.8" y="211.3">BEDROOM 2</text><text class="fp-lbl fp-lbl-s" x="296.3" y="127.3">BATH</text><text class="fp-lbl fp-lbl-s" x="178.5" y="62">PRIVATE LIFT</text><text class="fp-lbl fp-lbl-s" x="126.3" y="151.3">UP</text><text class="fp-lbl" x="202.5" y="283.3">INFINITY POOL</text><text class="fp-lbl fp-lbl-s" x="75" y="291.5">SKY TERRACE</text><g class="fp-meta"><circle cx="326" cy="40" r="11"/><path d="M326 32 L330 45 L326 42 L322 45 Z" class="fp-n"/><text x="326" y="25" class="fp-sub">N</text></g><g class="fp-meta"><line x1="30" y1="372" x2="105" y2="372"/><line x1="30" y1="369" x2="30" y2="375"/><line x1="67.5" y1="370" x2="67.5" y2="374"/><line x1="105" y1="369" x2="105" y2="375"/><text x="113" y="375" class="fp-sub" style="text-anchor:start">5 m</text></g><text class="fp-area" x="330" y="376">520 m²</text></svg></div>
+            </div>
+            <div class="res__body">
+              <span class="res__type">Levels 46 – 48</span>
+              <h3 class="res__name">Sky Penthouse</h3>
+              <div class="res__meta"><span>410 – 520 m²</span><span>3 bedrooms</span><span>Pool</span></div>
+              <div class="res__price"><span>Price</span><b>On request</b></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= AMENITIES ================= -->
+    <section class="section section--alt" id="amenities">
+      <div class="wrap amenities">
+        <figure class="amen-img lqip rv" style="background-image:url(data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAAAQBQCdASoYABQAPxF4slAsJ6SisAgBgCIJaACdMt61Vf/gVi8Fel+q+dBfL4bVD50AAP7eqA8RHsxmlfiGl1OLGa9ca7+d57uj1IctLVfELKQk31H+Je6BKGpxXFQ/9WoNnDzI43KTCaxAWMvGrNa4F5Tx55SYPTGkI1XNvAQ3cADT94lTR5T8ALE4UkmdV4GVbuOAAAA=)">
+          <img src="images/amenity.webp" srcset="images/amenity-600.webp 600w, images/amenity.webp 1200w" sizes="(max-width: 860px) 100vw, 640px" alt="Infinity pool on a level-48 sky terrace at dusk" loading="lazy" decoding="async" />
+          <figcaption>Sky terrace · Level 48</figcaption>
+        </figure>
+        <div class="rv">
+          <p class="eyebrow">Amenities</p>
+          <h2 class="h2">2,400 m² devoted<br /><em>to slow living.</em></h2>
+          <p class="lede">Three floors of shared spaces, run with the discretion of a private members' club.</p>
+          <ul class="amen-list">
+            <li><small>L47</small><b>Residents' sky pool</b><span>25 m heated infinity edge</span></li>
+            <li><small>L47</small><b>Wellness floor</b><span>Gym, sauna, treatment rooms</span></li>
+            <li><small>L47</small><b>Private dining</b><span>Chef's kitchen for 14</span></li>
+            <li><small>L01</small><b>Residents' lounge</b><span>Library, bar and garden</span></li>
+            <li><small>G</small><b>Concierge &amp; valet</b><span>Staffed 24 hours</span></li>
+            <li><small>B1–B3</small><b>Private parking</b><span>EV charging at every bay</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ARCHITECTURE ================= -->
+    <section class="quote" id="architecture">
+      <div class="rv">
+        <p class="eyebrow" style="justify-content:center">Architecture</p>
+        <blockquote>“A tower that dissolves into the evening sky: all glass, light and quiet stone.”</blockquote>
+        <cite>The Solenne design studio</cite>
+      </div>
+    </section>
+
+    <!-- ================= LOCATION ================= -->
+    <section class="section section--alt" id="location">
+      <div class="wrap location">
+        <div class="rv">
+          <p class="eyebrow">Location</p>
+          <h2 class="h2">The centre of<br /><em>everything.</em></h2>
+          <p class="lede">On a quiet, tree-lined street, a few minutes' walk from the river, the financial quarter and the city's best tables.</p>
+          <ul class="dist">
+            <li><span>Riverside promenade</span><span>3 min</span></li>
+            <li><span>Financial quarter</span><span>6 min</span></li>
+            <li><span>Opera &amp; museum district</span><span>9 min</span></li>
+            <li><span>International airport</span><span>25 min</span></li>
+          </ul>
+        </div>
+        <div class="map rv" role="img" aria-label="Stylised map showing Solenne Residences near the river, the financial quarter and the museum district">
+          <svg viewBox="0 0 600 492" fill="none">
+            <defs>
+              <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" stroke="rgba(243,238,230,.06)" /></pattern>
+              <radialGradient id="glow"><stop offset="0" stop-color="#c8a26b" stop-opacity=".45" /><stop offset="1" stop-color="#c8a26b" stop-opacity="0" /></radialGradient>
+            </defs>
+            <rect width="600" height="492" fill="url(#grid)" />
+            <path d="M-10 380 C 120 340, 180 420, 300 380 S 480 300, 610 330" stroke="#1f3350" stroke-width="46" stroke-linecap="round" />
+            <path d="M-10 380 C 120 340, 180 420, 300 380 S 480 300, 610 330" stroke="rgba(120,160,210,.18)" stroke-width="2" />
+            <path d="M60 0 L 170 492 M 0 140 L 600 200 M 340 0 L 300 492 M 0 260 L 600 300 M 470 0 L 520 492" stroke="rgba(243,238,230,.16)" stroke-width="3" />
+            <path d="M0 60 L 600 90 M 240 0 L 220 492" stroke="rgba(243,238,230,.08)" stroke-width="2" />
+            <g fill="rgba(243,238,230,.07)"><rect x="380" y="90" width="70" height="60" /><rect x="460" y="210" width="90" height="60" /><rect x="90" y="190" width="100" height="50" /><rect x="180" y="40" width="40" height="70" /></g>
+            <g font-family="Manrope, sans-serif" font-size="11" letter-spacing="2.4" fill="#8d95a5">
+              <text x="390" y="80">FINANCIAL QUARTER</text>
+              <text x="80" y="180">MUSEUM DISTRICT</text>
+              <text x="430" y="372">RIVERSIDE</text>
+            </g>
+            <circle cx="318" cy="235" r="70" fill="url(#glow)" />
+            <circle class="map-pin" cx="318" cy="235" r="8" fill="#e2c595" />
+            <circle class="map-ring" cx="318" cy="235" r="16" stroke="#c8a26b" stroke-opacity=".6" />
+            <circle class="map-ring map-ring--2" cx="318" cy="235" r="16" stroke="#c8a26b" stroke-opacity=".6" />
+            <text x="340" y="231" font-family="Cormorant Garamond, serif" font-size="24" fill="#f3eee6" letter-spacing="3">SOLENNE</text>
+            <text x="341" y="250" font-family="Manrope, sans-serif" font-size="9.5" fill="#c9c3b8" letter-spacing="2.6">1 SOLENNE WAY</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GALLERY ================= -->
+    <section class="section" id="gallery">
+      <div class="wrap">
+        <div class="split rv">
+          <div>
+            <p class="eyebrow">Gallery</p>
+            <h2 class="h2">Moments at<br /><em>Solenne.</em></h2>
+          </div>
+          <p class="lede">From the glow of the arrival court to the last swim above the skyline.</p>
+        </div>
+        <div class="gallery">
+          <figure class="g1 lqip rv" style="background-image:url(data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAwBACdASoYAA4APxFysFAsJqSisAgBgCIJbACdL1yBBCJhf4sCr5xLFcwA/hYyj4c7uMAQvtGa0qrmKDAHy352IkCmj1X8DEc8IEGOmaSrVFq1MbFaXzCbMlOvso8dY2oWGfUfGJjyCUDXCwzZaq0rQAJExNpLBqI/EgdQAAA=)"><img src="images/gal-1.webp" srcset="images/gal-1-900.webp 900w, images/gal-1.webp 1800w" sizes="(max-width: 860px) 100vw, 720px" alt="Solenne tower at blue hour" loading="lazy" decoding="async" /><figcaption>The tower</figcaption></figure>
+          <figure class="g2 lqip rv" style="background-image:url(data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAABQBACdASoYAA4APxFwsFAsJiSisAgBgCIJbACdMoRwACnHOFj+7PmKWCpAAP7AeUyv2BFm0ZI7vqmrs255Ac/DxCmNisx6FYShVqJS7yOsG9ayPPrVeyTLmNONOc6di4xX/zHIPdpl7VncvKHRqTgBvhU6AAAA)"><img src="images/gal-2.webp" srcset="images/gal-2-600.webp 600w, images/gal-2.webp 1200w" sizes="(max-width: 860px) 50vw, 520px" alt="Grand lobby" loading="lazy" decoding="async" /><figcaption>Grand lobby</figcaption></figure>
+          <figure class="g3 lqip rv" style="background-image:url(data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAABQBACdASoYAA4APxFysVAsJqSisAgBgCIJbACdIA/CdneZy3q6zpnyRtyAAP7NnYoHQXJ48Kb7GXGqhQsWLdgFosKMlw/nMEwcZXIqikOvqnGxS3t8sGbKvYN+I1wDlDwJi3WasJw2L8wWNSzNz+CM6v4yngCJmE1SH49GPNfMzAAA)"><img src="images/gal-3.webp" srcset="images/gal-3-700.webp 700w, images/gal-3.webp 1400w" sizes="(max-width: 860px) 50vw, 520px" alt="The Penthouse seen from outside the tower at dusk" loading="lazy" decoding="async" /><figcaption>The Penthouse · L48</figcaption></figure>
+          <figure class="g4 lqip rv" style="background-image:url(data:image/webp;base64,UklGRtIAAABXRUJQVlA4IMYAAABwBQCdASoYABwAPxF2sVAsJ6SisAgBgCIJbACdIFj6AAcap2PJ0R/+7BP5v5xKXf00UUIQAPxRsnPH6pDUUUhZRowb5F7fPAtPviaKnY4x8wMwxdXrqsM4/Y0wXTk+WLOHH3Rg4BTQunfgSTRnxPWsFMS3dc5kqcUrMN2HcBqpSEe1k/nkoxHiLri1PKVwBhUMqoHZc8MXS+H9AwWiDvjXgOWl4fSHcL+wc9lu+0OSLXDM9tYMwKIkMEMDk/RRgJzF3+AsAAA=)"><img src="images/gal-4.webp" srcset="images/gal-4-400.webp 400w, images/gal-4.webp 800w" sizes="(max-width: 860px) 50vw, 420px" alt="Double-height salon with ring chandelier" loading="lazy" decoding="async" /><figcaption>The salon</figcaption></figure>
+          <figure class="g5 lqip rv" style="background-image:url(data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADQAwCdASoYAA4APxFysFAsJqSisAgBgCIJbACdMoABE0No+1ZgkPAA/nFga8nXRFfaQX/FRZBfoCsYeWhIspB+TfBSS8YPj8LBDveENAgOMnS7WpRqWVM/qqB/YvXZumoAAA==)"><img src="images/gal-5.webp" srcset="images/gal-5-800.webp 800w, images/gal-5.webp 1600w" sizes="(max-width: 860px) 100vw, 820px" alt="Private sky terrace with infinity pool over the city at dusk" loading="lazy" decoding="async" /><figcaption>Private sky terrace</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BOOK ================= -->
+    <section class="section section--alt" id="book">
+      <div class="wrap book">
+        <div class="rv">
+          <p class="eyebrow">Private viewings</p>
+          <h2 class="h2">See it from<br /><em>the inside.</em></h2>
+          <p class="lede">Visit the sales gallery and the fully furnished show penthouse on level 48. Viewings are private and last around an hour.</p>
+          <div class="contact-lines">
+            <div><small>Sales gallery</small>1 Solenne Way, Central District</div>
+            <div><small>Call</small><a href="tel:+12125550148">(212) 555-0148</a></div>
+            <div><small>Email</small><a href="mailto:sales@solenne-residences.com">sales@solenne-residences.com</a></div>
+          </div>
+        </div>
+        <form class="form rv" novalidate>
+          <div class="field"><label for="f-name">Full name</label><input id="f-name" name="name" autocomplete="name" required /></div>
+          <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" /></div>
+          <div class="field field--full"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required /></div>
+          <div class="field"><label for="f-type">Residence</label>
+            <select id="f-type" name="residence"><option>One Bedroom</option><option>Two Bedroom</option><option selected>Three Bedroom</option><option>Sky Penthouse</option></select>
+          </div>
+          <div class="field"><label for="f-date">Preferred date</label><input id="f-date" name="date" type="date" /></div>
+          <div class="field field--full"><label for="f-msg">Message (optional)</label><textarea id="f-msg" name="message"></textarea></div>
+          <button class="btn btn--gold" type="submit">Request viewing</button>
+          <p class="form__note">We reply within one business day. Your details are only used to arrange your viewing.</p>
+          <div class="form__ok" role="status">Thank you. A Solenne advisor will contact you shortly to confirm your private viewing.</div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__grid">
+      <div>
+        <a class="brand" href="#top"><span class="brand__name">SOLENNE</span><span class="brand__sub">RESIDENCES</span></a>
+        <p style="color:var(--muted);font-size:14px;max-width:32ch;margin-top:20px">48 storeys of light, stone and quiet above the Central District.</p>
+      </div>
+      <div><h4>Explore</h4><ul><li><a href="#residences">Residences</a></li><li><a href="#amenities">Amenities</a></li><li><a href="#location">Location</a></li><li><a href="#gallery">Gallery</a></li></ul></div>
+      <div><h4>Visit</h4><ul><li>1 Solenne Way</li><li>Central District</li><li>Daily 10:00 – 19:00</li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="tel:+12125550148">(212) 555-0148</a></li><li><a href="mailto:sales@solenne-residences.com">sales@solenne-residences.com</a></li><li><a href="#book">Book a viewing</a></li></ul></div>
+    </div>
+    <div class="footer__base">
+      <span>© 2026 Solenne Residences. All rights reserved.</span>
+      <span>Imagery is illustrative. Specifications, prices and availability are subject to change.</span>
+    </div>
+  </footer>
+
+  <script src="js/film.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
